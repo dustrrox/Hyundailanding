@@ -68,7 +68,7 @@
                     maxlength="30" ></div>
             <div class="form-group">
               <small class="form-text text-left text-muted" style="margin-left: 5px;font-family: Conv_HyundaiSansHead-Bold;">Model</small>
-              <select class="border rounded-0 form-control" id="Model" name="Model" style="font-family: Conv_HyundaiSansHead-Light;">
+              <select class="border rounded-0 form-control" id="Model" name="Model" style="font-family: Conv_HyundaiSansHead-Light;"required>
                 <option disabled="" selected="selected" value=""></option>
                 <optgroup label="Models"><option value="SANTRO">SANTRO</option>
                   <option value="GRAND i10 NIOS">GRAND i10 NIOS</option>
@@ -76,7 +76,7 @@
             <div
                 class="form-group">
                 <small class="form-text text-left text-muted" style="margin-left: 5px;font-family: Conv_HyundaiSansHead-Bold;opacity: 1;">Select Area</small>
-                <select class="border rounded-0 form-control" name="City" id="City" style="font-family: Conv_HyundaiSansHead-Light;">
+                <select class="border rounded-0 form-control" name="City" id="City" style="font-family: Conv_HyundaiSansHead-Light;"required>
                   <optgroup label="AREA">
                     <option disabled="" selected="selected" value=""></option>
                     <option value="CENTRALDELHI"  >CENTRAL DELHI</option>
@@ -96,8 +96,10 @@
         <div
             class="form-group">
             <small class="form-text text-left text-muted" style="margin-left: 5px;font-family: Conv_HyundaiSansHead-Bold;">Select Dealer</small>
-            <select class="border rounded-0 form-control" name="Dealer" id="Dealer" style="font-family: Conv_HyundaiSansHead-Light;"><optgroup label="Dealer">
-              </optgroup></select>
+            <select class="border rounded-0 form-control" name="Dealer" id="Dealer" style="font-family: Conv_HyundaiSansHead-Light;"required><optgroup label="Dealer">
+              </optgroup>
+              <option disabled="" selected="selected" value=""></option>
+            </select>
 
               <div class="alert">Thanks. We will call you soon </div>
 
