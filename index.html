@@ -49,33 +49,34 @@
     <div class="container" id="form" style="margin-top: 90px;">
         <div class="row">
             <div class="col">
-                <form action="#" method="POST" id="dataform" class="dataform">
+                <form  id="dataform" class="dataform">
                     <h1 class="text-center" style="font-family: Conv_HyundaiSansHead-Bold;">Book Now</h1>
+                    <div class="alert">Your message has been sent</div>
                     <div class="form-group">
                       <small class="form-text text-left text-muted" style="margin-left: 5px;font-family: Conv_HyundaiSansHead-Bold;opacity: 1;">&nbsp;Name</small>
-                      <input class="border rounded-0 form-control" type="text" required="" minlength="3" maxlength="30"></div>
+                      <input class="border rounded-0 form-control" type="text" id="Name" name="Name" required="" minlength="3" maxlength="30"></div>
                     <div
                         class="form-group"><small class="form-text text-left text-muted" style="margin-left: 5px;font-family: Conv_HyundaiSansHead-Bold;opacity: 1;">&nbsp;Phone No.</small>
-                        <input class="border rounded-0 form-control" type="text" required="" minlength="10" maxlength="10"
-                            pattern="&quot;[6789][0-9]{9}&quot;"></div>
+                        <input class="border rounded-0 form-control" type="tel" id="Phone" name="Phone" required="" minlength="10" maxlength="10"
+                            ></div>
             <div class="form-group">
               <small class="form-text text-left text-muted" style="margin-left: 5px;font-family: Conv_HyundaiSansHead-Bold;opacity: 1;">Email</small>
-              <input class="border rounded-0 form-control" type="text" required="" name="Email" inputmode="email" minlength="6"
-                    maxlength="30" pattern="&quot;[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+  (?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2} |com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b&quot;"></div>
+              <input class="border rounded-0 form-control" type="text" required="" id="Email" name="Email" inputmode="email" minlength="6"
+                    maxlength="30" ></div>
             <div class="form-group">
               <small class="form-text text-left text-muted" style="margin-left: 5px;font-family: Conv_HyundaiSansHead-Bold;">Model</small>
-              <select class="border rounded-0 form-control" style="font-family: Conv_HyundaiSansHead-Light;">
+              <select class="border rounded-0 form-control" id="Model" name="Model" style="font-family: Conv_HyundaiSansHead-Light;">
                 <optgroup label="Models"><option value="SENTRO">SANTRO</option>
                   <option value="GRAND i10">GRAND i10 NIOS</option>
                   <option value="AURA">AURA</option></optgroup></select></div>
             <div
                 class="form-group">
                 <small class="form-text text-left text-muted" style="margin-left: 5px;font-family: Conv_HyundaiSansHead-Bold;opacity: 1;">Select Area</small>
-                <select class="border rounded-0 form-control" name="City" style="font-family: Conv_HyundaiSansHead-Light;">
+                <select class="border rounded-0 form-control" name="City" id="City" style="font-family: Conv_HyundaiSansHead-Light;">
                   <optgroup label="This is a group">
                     <option value="CENTRALDELHI" selected="">CENTRAL DELHI</option>
                     <option value="NORTHDELHI">NORTH DELHI</option>
-                    <option value="EASTDELHI">EAST DELHI</option><option value="WESTDELHI ">WEST DELHI </option>
+                    <option value="EASTDELHI">EAST DELHI</option><option value="WESTDELHI">WEST DELHI </option>
                     <option value="SOUTHDELHI">SOUTH DELHI</option><option value="NOIDA">NOIDA</option>
                     <option value="GREATERNOIDA">GREATER NOIDA</option><option value="GHAZIABAD">GHAZIABAD</option>
                     <option value="MODINAGAR">MODINAGAR</option>
@@ -87,7 +88,7 @@
             <select class="border rounded-0 form-control" name="Dealer" id="Dealer" style="font-family: Conv_HyundaiSansHead-Light;"><optgroup label="Dealer">
               </optgroup></select></div>
     <section
-        class="text-center" style="margin-top: 51px;"><button class="btn btn-primary border rounded-0" type="button" style="width: 153px;background-color: rgb(2,59,120);">SUBMIT</button></section>
+        class="text-center" style="margin-top: 51px;"><button class="btn btn-primary border rounded-0" type="submit"  style="width: 153px;background-color: rgb(2,59,120);">SUBMIT</button></section>
         </form>
         </div>
         </div>
@@ -352,6 +353,8 @@ $(document).ready(function(){
             <script src="assets/js/Card-Carousel.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
             <script src="assets/js/Simple-Slider.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+            <script src="assets/js/data.js"></script>
 </body>
 
 </html>
