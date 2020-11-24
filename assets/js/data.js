@@ -26,11 +26,11 @@ function submitForm(e) {
  var Email = document.getElementById('Email').value;
  var Model = document.getElementById('Model').value;
  var City = document.getElementById('City').value;
- var Dealer = document.getElementById('Dealer').value;
+ 
   
-  console.log(Name,Phone, Email,Model,City, Dealer);
+  console.log(Name,Phone, Email,Model,City);
 
-  saveData(Name, Phone, Email,Model,City, Dealer);
+  saveData(Name, Phone, Email,Model,City);
 
   document.getElementById("dataform").reset();
 
@@ -49,7 +49,7 @@ function submitForm(e) {
 
 
 // Save infos to Firebase
-function saveData(Name, Phone, Email,Model,City, Dealer) {
+function saveData(Name, Phone, Email,Model,City) {
   var newLeadData = LeadData.push();
 
   newLeadData.set({
@@ -58,6 +58,6 @@ function saveData(Name, Phone, Email,Model,City, Dealer) {
     Email: Email,
     Model: Model,
     City: City,
-    Dealer: Dealer,
+   
   });
 }  
