@@ -27,15 +27,18 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: #ffffff;">
-        <div class="container"><a href="#home"><img src="assets/img/1280px-Hyundai_Motor_Company_logo.svg.png" width="auto" height="20"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="opacity: 1;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-toggleable-md bg-faded navbar-light fixed-top" style="background-color: #ffffff;">
+        <div class="container"><a href="#home"><img src="assets/img/1280px-Hyundai_Motor_Company_logo.svg.png" width="auto" height="20">
+</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" type="button" data-target="#navcol-1" aria-expanded="false" aria-label="Toggle navigation" style="opacity: 1;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse text-right" id="navcol-1" style="background-color: #ffffff;margin-left: 57px;">
                 <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item dropdown"><a data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle nav-link" href="#" style="font-family: Conv_HyundaiSansHead-Medium_1;text-align:right;">Model </a>
-                        <div role="menu" class="dropdown-menu border rounded border-white" style="text-decoration: none;"><a role="presentation" class="dropdown-item" href="#santro" style="font-family: Conv_HyundaiSansHead-Regular_1; text-align: right;">SANTRO</a></a>
+                        <div role="menu" class="dropdown-menu border rounded border-white" style="text-decoration: none;">
+                   <a role="presentation" class="dropdown-item" href="#santro" style="font-family: Conv_HyundaiSansHead-Regular_1; text-align: right;">SANTRO</a></a>
                             <a
-                                role="presentation" class="dropdown-item" href="#Grandi10NIOS" style="font-family: Conv_HyundaiSansHead-Regular_1;text-align: right;">GRAND i10 NIOS</a><a role="presentation" class="dropdown-item " href="#Aura" style="font-family: Conv_HyundaiSansHead-Regular_1;text-align: right;">AURA</a></a>
+                                role="presentation" class="dropdown-item" href="#Grandi10NIOS" style="font-family: Conv_HyundaiSansHead-Regular_1;text-align: right;">GRAND i10 NIOS</a>
+                              <a role="presentation" class="dropdown-item " href="#Aura" style="font-family: Conv_HyundaiSansHead-Regular_1;text-align: right;">AURA</a></a>
                                 <a
                                     role="presentation" class="dropdown-item" href="#Elantra" style="font-family: Conv_HyundaiSansHead-Regular_1;text-align: right;text-align: right;">Elantra</a>
                         </div>
@@ -120,7 +123,13 @@
         </div>
         </div>
 
-        <div class="container" style="margin-top: 50px;"><img class="img-fluid" id="Overview" src="assets/img/main/Maintainance-Home-page.jpg" /></div>
+        <div class="container" style="margin-top: 50px;">
+            <picture>
+                <source media="(min-width:650px)" srcset="assets\img\Maintainance-Home-page-pc.jpg" style="margin-left:-100px; ">
+                <source media="(min-width:250px)" srcset="assets/img/main/Maintainance-Home-page.jpg" style="padding: 50px;width: auto;" >
+                <img class="img-fluid" id="Overview" src="img_orange_flowers.jpg" alt="Flowers" style="widows: 2px;;">
+              </picture>
+           
         <div class="container" style="margin-top: 55px;">
             <div class="row">
                 <div class="col" style="background-color: #e7e5e5;">
@@ -156,459 +165,8 @@
               
         
        
-<script>
-  // object literal holding data for option elements
-var Select_List_Data = {
-    
-    'Dealer': { 
-        
-        
-        CENTRALDELHI: {
-            text: ['PAHWA HYUNDAI (Karol Bagh)'],
-            value: ['PAHWA HYUNDAI (Karol Bagh)']
-        },
-        NORTHDELHI: {
-            text: ['HEMKUNT HYUNDAI (Wazirpur)', 'UNITY HYUNDAI (Rohini)', 'PAHWA HYUNDAI (Shakti Nagar)', 'MALWA HYUNDAI (Narela)','UNITY HYUNDAI (Shalimar Place)'],
-            value: ['HEMKUNT HYUNDAI (Wazirpur)', 'UNITY HYUNDAI (Rohini)', 'PAHWA HYUNDAI (Shakti Nagar)', 'MALWA HYUNDAI (Narela)','UNITY HYUNDAI (Shalimar Place)']
-        },
-        EASTDELHI: {
-            text: ['SUNRISE HYUNDAI (Patparganj)', 'SUNRISE HYUNDAI (Opp. Mother Dairy Plant)', 'HIMGIRI HYUNDAI (Dayanand Vihar)', 'HIMGIRI HYUNDAI (Jhilmil Indl. Area)','SHUBAN SAI HYUNDAI (East Gokulpuri)'],
-            value: ['SUNRISE HYUNDAI (Patparganj)', 'SUNRISE HYUNDAI (Opp. Mother Dairy Plant)', 'HIMGIRI HYUNDAI (Dayanand Vihar)', 'HIMGIRI HYUNDAI (Jhilmil Indl. Area)','SHUBAN SAI HYUNDAI (East Gokulpuri)']
-        },
-        WESTDELHI: {
-            text: ['VD HYUNDAI (Peeragarhi)', 'DEEP HYUNDAI (Mangolpuri)', 'HANS HYUNDAI (Motinagar)', 'FRONTIER HYUNDAI (Raja Puri Dwarka)','SAPPHIRE HYUNDAI (Sec. 20 Dwarka)','SAPPHIRE HYUNDAI (Mayapuri Ph-1)'],
-            value: ['VD HYUNDAI (Peeragarhi)', 'DEEP HYUNDAI (Mangolpuri)', 'HANS HYUNDAI (Motinagar)', 'FRONTIER HYUNDAI (Raja Puri Dwarka)','SAPPHIRE HYUNDAI (Sec. 20 Dwarka)','SAPPHIRE HYUNDAI (Mayapuri Ph-1)']
-        },
-        SOUTHDELHI: {
-            text: ['SHUBAN SAI HYUNDAI (Mathura Road,MCIE)', 'KONCEPT HYUNDAI (Okhla)', 'KONCEPT HYUNDAI (Kailash Colony Branch)', 'MALWA HYUNDAI (Narela)','KONCEPT HYUNDAI (Green Park)','LAMBA HYUNDAI (Malviya Nagar)'],
-            value: ['SHUBAN SAI HYUNDAI (Mathura Road,MCIE)', 'KONCEPT HYUNDAI (Okhla)', 'KONCEPT HYUNDAI (Kailash Colony Branch)', 'MALWA HYUNDAI (Narela)','KONCEPT HYUNDAI (Green Park)','LAMBA HYUNDAI (Malviya Nagar)']
-        },
-   
-           NOIDA: {
-            text: ['NIMBUS HYUNDAI (Sector-5)', 'CAPITAL HYUNDAI (Sector-63)', 'DREAM HYUNDAI (C-27,Sector-3)', 'KARMA HYUNDAI (Sector-85)'],
-            value: ['NIMBUS HYUNDAI (Sector-5)', 'CAPITAL HYUNDAI (Sector-63)', 'DREAM HYUNDAI (C-27,Sector-3)', 'KARMA HYUNDAI (Sector-85)']
-        },
 
-        GREATERNOIDA: {
-            text: ['FORTUNE HYUNDAI (D-74,Site-IV)'],
-            value: ['FORTUNE HYUNDAI (D-74,Site-IV)']
-        },
-        GHAZIABAD: {
-            text: ['M.R. HYUNDAI (Loni Road)', 'M.R. HYUNDAI (Site-IV Indl. Area Branch)', 'SHINE HYUNDAI (Silver City Mall)', 'PAWAN HYUNDAI (Lal Kuan)','DREAM HYUNDAI (Meerut Road)'],
-            value: ['M.R. HYUNDAI (Loni Road)', 'M.R. HYUNDAI (Site-IV Indl. Area Branch)', 'SHINE HYUNDAI (Silver City Mall)', 'PAWAN HYUNDAI (Lal Kuan)','DREAM HYUNDAI (Meerut Road)']
-        },
-
-        MODINAGAR: {
-            text: ['FORTUNE HYUNDAI'],
-            value: ['FORTUNE HYUNDAI']
-        },
-        FARIDABAD: {
-            text: ['TRIUMPH HYUNDAI (Near YMCA Chowk)', 'MAHADEV HYUNDAI (NHPC Chowk)', 'MAHADEV HYUNDAI (Byepass Road)', 'BOHRA HYUNDAI (Neelam Bata Road)'],
-            value: ['TRIUMPH HYUNDAI (Near YMCA Chowk)', 'MAHADEV HYUNDAI (NHPC Chowk)', 'MAHADEV HYUNDAI (Byepass Road)', 'BOHRA HYUNDAI (Neelam Bata Road)']
-        },
-
-        PALWAL: {
-            text: ['PARASHAR HYUNDAI'],
-            value: ['PARASHAR HYUNDAI']
-        },
-        GURUGRAM: {
-            text: ['TRIUMPH HYUNDAI (Wazirpur)', 'TRIUMPH HYUNDAI (Manesar)', 'DEE EMM HYUNDAI (Sohna Road)', 'HIMGIRI HYUNDAI (Golf Course Road, Sector-53)','DEE EMM HYUNDAI (Indl. Estate Opp. Sector-14)','JMV HYUNDAI (Sohna Road)','SAFDARJANG HYUNDAI (Udyog Vihar-IV)','SUPERON HYUNDAI (Sohna Road Branch)','SUPERON HYUNDAI (Hero Honda Chowk)'],
-            value: ['TRIUMPH HYUNDAI (Wazirpur)', 'TRIUMPH HYUNDAI (Manesar)', 'DEE EMM HYUNDAI (Sohna Road)', 'HIMGIRI HYUNDAI (Golf Course Road, Sector-53)','DEE EMM HYUNDAI (Indl. Estate Opp. Sector-14)','JMV HYUNDAI (Sohna Road)','SAFDARJANG HYUNDAI (Udyog Vihar-IV)','SUPERON HYUNDAI (Sohna Road Branch)','SUPERON HYUNDAI (Hero Honda Chowk)']
-        },
-        SONIPAT: {
-            text: ['MALWA HYUNDAI (Jat Joshi Bahalgarh Road)'],
-            value: ['MALWA HYUNDAI (Jat Joshi Bahalgarh Road)']
-        },
-        GANAUR: {
-            text: ['MALWA HYUNDAI (Railway Road)'],
-            value: ['MALWA HYUNDAI (Railway Road)']
-        },
-        KUNDLI: {
-            text: ['MALWA HYUNDAI (NH-1,31KM Stone)'],
-            value: ['MALWA HYUNDAI (NH-1,31KM Stone)']
-        },
-
-        GOHANA: {
-            text: ['MALWA HYUNDAI (Fowahara Chowk)'],
-            value: ['MALWA HYUNDAI (Fowahara Chowk)']
-        },
-
-        BARAUT: {
-            text: ['M.R. HYUNDAI (Near Kamta Prasad B.Ed. College)'],
-            value: ['M.R. HYUNDAI (Near Kamta Prasad B.Ed. College)']
-        },
-        BULANDSHAHR: {
-            text: ['FORTUNE HYUNDAI (Bhoor Crossing Delhi Road)'],
-            value: ['FORTUNE HYUNDAI (Bhoor Crossing Delhi Road)']
-        },
-    }
-    
-    }    
-
-
-// removes all option elements in select box 
-// removeGrp (optional) boolean to remove optgroups
-function removeAllOptions(sel, removeGrp) {
-    var len, groups, par;
-    if (removeGrp) {
-        groups = sel.getElementsByTagName('optgroup');
-        len = groups.length;
-        for (var i=len; i; i--) {
-            sel.removeChild( groups[i-1] );
-        }
-    }
-    
-    len = sel.options.length;
-    for (var i=len; i; i--) {
-        par = sel.options[i-1].parentNode;
-        par.removeChild( sel.options[i-1] );
-    }
-}
-
-function appendDataToSelect(sel, obj) {
-    var f = document.createDocumentFragment();
-    var labels = [], group, opts;
-    
-    function addOptions(obj) {
-        var f = document.createDocumentFragment();
-        var o;
-        
-        for (var i=0, len=obj.text.length; i<len; i++) {
-            o = document.createElement('option');
-            o.appendChild( document.createTextNode( obj.text[i] ) );
-            
-            if ( obj.value ) {
-                o.value = obj.value[i];
-            }
-            
-            f.appendChild(o);
-        }
-        return f;
-    }
-    
-    if ( obj.text ) {
-        opts = addOptions(obj);
-        f.appendChild(opts);
-    } else {
-        for ( var prop in obj ) {
-            if ( obj.hasOwnProperty(prop) ) {
-                labels.push(prop);
-            }
-        }
-        
-        for (var i=0, len=labels.length; i<len; i++) {
-            group = document.createElement('optgroup');
-            group.label = labels[i];
-            f.appendChild(group);
-            opts = addOptions(obj[ labels[i] ] );
-            group.appendChild(opts);
-        }
-    }
-    sel.appendChild(f);
-}
-
-
-// anonymous function assigned to onchange event of controlling select box
-document.forms['dataform'].elements['City'].onchange = function(e) {
-    // name of associated select box
-    var relName = 'Dealer';
-    
-    // reference to associated select box 
-    var relList = this.form.elements[ relName ];
-    
-    // get data from object literal based on selection in controlling select box (this.value)
-    var obj = Select_List_Data[ relName ][ this.value ];
-    
-    // remove current option elements
-    removeAllOptions(relList, true);
-    
-    // call function to add optgroup/option elements
-    // pass reference to associated select box and data for new options
-    appendDataToSelect(relList, obj);
-};
-
-
-// populate associated select box as page loads
-(function() { // immediate function to avoid globals
-    
-    var form = document.forms['dataform'];
-    
-    // reference to controlling select box
-    var sel = form.elements['City'];
-    sel.selectedIndex = 0;
-    
-    // name of associated select box
-    var relName = 'Dealer';
-    // reference to associated select box
-    var rel = form.elements[ relName ];
-    
-    // get data for associated select box passing its name
-    // and value of selected in controlling select box
-    var data = Select_List_Data[ relName ][ sel.value ];
-    
-    // add options to associated select box
-    appendDataToSelect(rel, data);
-    
-}());
-</script>
-<script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-
-
-</script>
-
-
-
-   <script> $(document).on('click','.navbar-collapse.in',function(e) {
-
-        if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
-            $(this).collapse('hide');
-        }
-    
-    }); 
-    </script>
   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "design") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-      
-
-<script>
-  // object literal holding data for option elements
-var Select_List_Data = {
-    
-    'Dealer': { 
-        
-        
-        CENTRALDELHI: {
-            text: ['PAHWA HYUNDAI (Karol Bagh)'],
-            value: ['PAHWA HYUNDAI (Karol Bagh)']
-        },
-        NORTHDELHI: {
-            text: ['HEMKUNT HYUNDAI (Wazirpur)', 'UNITY HYUNDAI (Rohini)', 'PAHWA HYUNDAI (Shakti Nagar)', 'MALWA HYUNDAI (Narela)','UNITY HYUNDAI (Shalimar Place)'],
-            value: ['HEMKUNT HYUNDAI (Wazirpur)', 'UNITY HYUNDAI (Rohini)', 'PAHWA HYUNDAI (Shakti Nagar)', 'MALWA HYUNDAI (Narela)','UNITY HYUNDAI (Shalimar Place)']
-        },
-        EASTDELHI: {
-            text: ['SUNRISE HYUNDAI (Patparganj)', 'SUNRISE HYUNDAI (Opp. Mother Dairy Plant)', 'HIMGIRI HYUNDAI (Dayanand Vihar)', 'HIMGIRI HYUNDAI (Jhilmil Indl. Area)','SHUBAN SAI HYUNDAI (East Gokulpuri)'],
-            value: ['SUNRISE HYUNDAI (Patparganj)', 'SUNRISE HYUNDAI (Opp. Mother Dairy Plant)', 'HIMGIRI HYUNDAI (Dayanand Vihar)', 'HIMGIRI HYUNDAI (Jhilmil Indl. Area)','SHUBAN SAI HYUNDAI (East Gokulpuri)']
-        },
-        WESTDELHI: {
-            text: ['VD HYUNDAI (Peeragarhi)', 'DEEP HYUNDAI (Mangolpuri)', 'HANS HYUNDAI (Motinagar)', 'FRONTIER HYUNDAI (Raja Puri Dwarka)','SAPPHIRE HYUNDAI (Sec. 20 Dwarka)','SAPPHIRE HYUNDAI (Mayapuri Ph-1)'],
-            value: ['VD HYUNDAI (Peeragarhi)', 'DEEP HYUNDAI (Mangolpuri)', 'HANS HYUNDAI (Motinagar)', 'FRONTIER HYUNDAI (Raja Puri Dwarka)','SAPPHIRE HYUNDAI (Sec. 20 Dwarka)','SAPPHIRE HYUNDAI (Mayapuri Ph-1)']
-        },
-        SOUTHDELHI: {
-            text: ['SHUBAN SAI HYUNDAI (Mathura Road,MCIE)', 'KONCEPT HYUNDAI (Okhla)', 'KONCEPT HYUNDAI (Kailash Colony Branch)', 'MALWA HYUNDAI (Narela)','KONCEPT HYUNDAI (Green Park)','LAMBA HYUNDAI (Malviya Nagar)'],
-            value: ['SHUBAN SAI HYUNDAI (Mathura Road,MCIE)', 'KONCEPT HYUNDAI (Okhla)', 'KONCEPT HYUNDAI (Kailash Colony Branch)', 'MALWA HYUNDAI (Narela)','KONCEPT HYUNDAI (Green Park)','LAMBA HYUNDAI (Malviya Nagar)']
-        },
-   
-           NOIDA: {
-            text: ['NIMBUS HYUNDAI (Sector-5)', 'CAPITAL HYUNDAI (Sector-63)', 'DREAM HYUNDAI (C-27,Sector-3)', 'KARMA HYUNDAI (Sector-85)'],
-            value: ['NIMBUS HYUNDAI (Sector-5)', 'CAPITAL HYUNDAI (Sector-63)', 'DREAM HYUNDAI (C-27,Sector-3)', 'KARMA HYUNDAI (Sector-85)']
-        },
-
-        GREATERNOIDA: {
-            text: ['FORTUNE HYUNDAI (D-74,Site-IV)'],
-            value: ['FORTUNE HYUNDAI (D-74,Site-IV)']
-        },
-        GHAZIABAD: {
-            text: ['M.R. HYUNDAI (Loni Road)', 'M.R. HYUNDAI (Site-IV Indl. Area Branch)', 'SHINE HYUNDAI (Silver City Mall)', 'PAWAN HYUNDAI (Lal Kuan)','DREAM HYUNDAI (Meerut Road)'],
-            value: ['M.R. HYUNDAI (Loni Road)', 'M.R. HYUNDAI (Site-IV Indl. Area Branch)', 'SHINE HYUNDAI (Silver City Mall)', 'PAWAN HYUNDAI (Lal Kuan)','DREAM HYUNDAI (Meerut Road)']
-        },
-
-        MODINAGAR: {
-            text: ['FORTUNE HYUNDAI'],
-            value: ['FORTUNE HYUNDAI']
-        },
-        FARIDABAD: {
-            text: ['TRIUMPH HYUNDAI (Near YMCA Chowk)', 'MAHADEV HYUNDAI (NHPC Chowk)', 'MAHADEV HYUNDAI (Byepass Road)', 'BOHRA HYUNDAI (Neelam Bata Road)'],
-            value: ['TRIUMPH HYUNDAI (Near YMCA Chowk)', 'MAHADEV HYUNDAI (NHPC Chowk)', 'MAHADEV HYUNDAI (Byepass Road)', 'BOHRA HYUNDAI (Neelam Bata Road)']
-        },
-
-        PALWAL: {
-            text: ['PARASHAR HYUNDAI'],
-            value: ['PARASHAR HYUNDAI']
-        },
-        GURUGRAM: {
-            text: ['TRIUMPH HYUNDAI (Wazirpur)', 'TRIUMPH HYUNDAI (Manesar)', 'DEE EMM HYUNDAI (Sohna Road)', 'HIMGIRI HYUNDAI (Golf Course Road, Sector-53)','DEE EMM HYUNDAI (Indl. Estate Opp. Sector-14)','JMV HYUNDAI (Sohna Road)','SAFDARJANG HYUNDAI (Udyog Vihar-IV)','SUPERON HYUNDAI (Sohna Road Branch)','SUPERON HYUNDAI (Hero Honda Chowk)'],
-            value: ['TRIUMPH HYUNDAI (Wazirpur)', 'TRIUMPH HYUNDAI (Manesar)', 'DEE EMM HYUNDAI (Sohna Road)', 'HIMGIRI HYUNDAI (Golf Course Road, Sector-53)','DEE EMM HYUNDAI (Indl. Estate Opp. Sector-14)','JMV HYUNDAI (Sohna Road)','SAFDARJANG HYUNDAI (Udyog Vihar-IV)','SUPERON HYUNDAI (Sohna Road Branch)','SUPERON HYUNDAI (Hero Honda Chowk)']
-        },
-        SONIPAT: {
-            text: ['MALWA HYUNDAI (Jat Joshi Bahalgarh Road)'],
-            value: ['MALWA HYUNDAI (Jat Joshi Bahalgarh Road)']
-        },
-        GANAUR: {
-            text: ['MALWA HYUNDAI (Railway Road)'],
-            value: ['MALWA HYUNDAI (Railway Road)']
-        },
-        KUNDLI: {
-            text: ['MALWA HYUNDAI (NH-1,31KM Stone)'],
-            value: ['MALWA HYUNDAI (NH-1,31KM Stone)']
-        },
-
-        GOHANA: {
-            text: ['MALWA HYUNDAI (Fowahara Chowk)'],
-            value: ['MALWA HYUNDAI (Fowahara Chowk)']
-        },
-
-        BARAUT: {
-            text: ['M.R. HYUNDAI (Near Kamta Prasad B.Ed. College)'],
-            value: ['M.R. HYUNDAI (Near Kamta Prasad B.Ed. College)']
-        },
-        BULANDSHAHR: {
-            text: ['FORTUNE HYUNDAI (Bhoor Crossing Delhi Road)'],
-            value: ['FORTUNE HYUNDAI (Bhoor Crossing Delhi Road)']
-        },
-    }
-    
-    }    
-
-
-// removes all option elements in select box 
-// removeGrp (optional) boolean to remove optgroups
-function removeAllOptions(sel, removeGrp) {
-    var len, groups, par;
-    if (removeGrp) {
-        groups = sel.getElementsByTagName('optgroup');
-        len = groups.length;
-        for (var i=len; i; i--) {
-            sel.removeChild( groups[i-1] );
-        }
-    }
-    
-    len = sel.options.length;
-    for (var i=len; i; i--) {
-        par = sel.options[i-1].parentNode;
-        par.removeChild( sel.options[i-1] );
-    }
-}
-
-function appendDataToSelect(sel, obj) {
-    var f = document.createDocumentFragment();
-    var labels = [], group, opts;
-    
-    function addOptions(obj) {
-        var f = document.createDocumentFragment();
-        var o;
-        
-        for (var i=0, len=obj.text.length; i<len; i++) {
-            o = document.createElement('option');
-            o.appendChild( document.createTextNode( obj.text[i] ) );
-            
-            if ( obj.value ) {
-                o.value = obj.value[i];
-            }
-            
-            f.appendChild(o);
-        }
-        return f;
-    }
-    
-    if ( obj.text ) {
-        opts = addOptions(obj);
-        f.appendChild(opts);
-    } else {
-        for ( var prop in obj ) {
-            if ( obj.hasOwnProperty(prop) ) {
-                labels.push(prop);
-            }
-        }
-        
-        for (var i=0, len=labels.length; i<len; i++) {
-            group = document.createElement('optgroup');
-            group.label = labels[i];
-            f.appendChild(group);
-            opts = addOptions(obj[ labels[i] ] );
-            group.appendChild(opts);
-        }
-    }
-    sel.appendChild(f);
-}
-
-
-// anonymous function assigned to onchange event of controlling select box
-document.forms['dataform'].elements['City'].onchange = function(e) {
-    // name of associated select box
-    var relName = 'Dealer';
-    
-    // reference to associated select box 
-    var relList = this.form.elements[ relName ];
-    
-    // get data from object literal based on selection in controlling select box (this.value)
-    var obj = Select_List_Data[ relName ][ this.value ];
-    
-    // remove current option elements
-    removeAllOptions(relList, true);
-    
-    // call function to add optgroup/option elements
-    // pass reference to associated select box and data for new options
-    appendDataToSelect(relList, obj);
-};
-
-
-// populate associated select box as page loads
-(function() { // immediate function to avoid globals
-    
-    var form = document.forms['dataform'];
-    
-    // reference to controlling select box
-    var sel = form.elements['City'];
-    sel.selectedIndex = 0;
-    
-    // name of associated select box
-    var relName = 'Dealer';
-    // reference to associated select box
-    var rel = form.elements[ relName ];
-    
-    // get data for associated select box passing its name
-    // and value of selected in controlling select box
-    var data = Select_List_Data[ relName ][ sel.value ];
-    
-    // add options to associated select box
-    appendDataToSelect(rel, data);
-    
-}());
-</script>
-<script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-
-
-</script>
 </section><section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -629,8 +187,231 @@ function myFunction(imgs) {
         </div>
     </footer>
 </div>
-
+<script>
+    // object literal holding data for option elements
+  var Select_List_Data = {
+      
+      'Dealer': { 
+          
+          
+          CENTRALDELHI: {
+              text: ['PAHWA HYUNDAI (Karol Bagh)'],
+              value: ['PAHWA HYUNDAI (Karol Bagh)']
+          },
+          NORTHDELHI: {
+              text: ['HEMKUNT HYUNDAI (Wazirpur)', 'UNITY HYUNDAI (Rohini)', 'PAHWA HYUNDAI (Shakti Nagar)', 'MALWA HYUNDAI (Narela)','UNITY HYUNDAI (Shalimar Place)'],
+              value: ['HEMKUNT HYUNDAI (Wazirpur)', 'UNITY HYUNDAI (Rohini)', 'PAHWA HYUNDAI (Shakti Nagar)', 'MALWA HYUNDAI (Narela)','UNITY HYUNDAI (Shalimar Place)']
+          },
+          EASTDELHI: {
+              text: ['SUNRISE HYUNDAI (Patparganj)', 'SUNRISE HYUNDAI (Opp. Mother Dairy Plant)', 'HIMGIRI HYUNDAI (Dayanand Vihar)', 'HIMGIRI HYUNDAI (Jhilmil Indl. Area)','SHUBAN SAI HYUNDAI (East Gokulpuri)'],
+              value: ['SUNRISE HYUNDAI (Patparganj)', 'SUNRISE HYUNDAI (Opp. Mother Dairy Plant)', 'HIMGIRI HYUNDAI (Dayanand Vihar)', 'HIMGIRI HYUNDAI (Jhilmil Indl. Area)','SHUBAN SAI HYUNDAI (East Gokulpuri)']
+          },
+          WESTDELHI: {
+              text: ['VD HYUNDAI (Peeragarhi)', 'DEEP HYUNDAI (Mangolpuri)', 'HANS HYUNDAI (Motinagar)', 'FRONTIER HYUNDAI (Raja Puri Dwarka)','SAPPHIRE HYUNDAI (Sec. 20 Dwarka)','SAPPHIRE HYUNDAI (Mayapuri Ph-1)'],
+              value: ['VD HYUNDAI (Peeragarhi)', 'DEEP HYUNDAI (Mangolpuri)', 'HANS HYUNDAI (Motinagar)', 'FRONTIER HYUNDAI (Raja Puri Dwarka)','SAPPHIRE HYUNDAI (Sec. 20 Dwarka)','SAPPHIRE HYUNDAI (Mayapuri Ph-1)']
+          },
+          SOUTHDELHI: {
+              text: ['SHUBAN SAI HYUNDAI (Mathura Road,MCIE)', 'KONCEPT HYUNDAI (Okhla)', 'KONCEPT HYUNDAI (Kailash Colony Branch)', 'MALWA HYUNDAI (Narela)','KONCEPT HYUNDAI (Green Park)','LAMBA HYUNDAI (Malviya Nagar)'],
+              value: ['SHUBAN SAI HYUNDAI (Mathura Road,MCIE)', 'KONCEPT HYUNDAI (Okhla)', 'KONCEPT HYUNDAI (Kailash Colony Branch)', 'MALWA HYUNDAI (Narela)','KONCEPT HYUNDAI (Green Park)','LAMBA HYUNDAI (Malviya Nagar)']
+          },
+     
+             NOIDA: {
+              text: ['NIMBUS HYUNDAI (Sector-5)', 'CAPITAL HYUNDAI (Sector-63)', 'DREAM HYUNDAI (C-27,Sector-3)', 'KARMA HYUNDAI (Sector-85)'],
+              value: ['NIMBUS HYUNDAI (Sector-5)', 'CAPITAL HYUNDAI (Sector-63)', 'DREAM HYUNDAI (C-27,Sector-3)', 'KARMA HYUNDAI (Sector-85)']
+          },
+  
+          GREATERNOIDA: {
+              text: ['FORTUNE HYUNDAI (D-74,Site-IV)'],
+              value: ['FORTUNE HYUNDAI (D-74,Site-IV)']
+          },
+          GHAZIABAD: {
+              text: ['M.R. HYUNDAI (Loni Road)', 'M.R. HYUNDAI (Site-IV Indl. Area Branch)', 'SHINE HYUNDAI (Silver City Mall)', 'PAWAN HYUNDAI (Lal Kuan)','DREAM HYUNDAI (Meerut Road)'],
+              value: ['M.R. HYUNDAI (Loni Road)', 'M.R. HYUNDAI (Site-IV Indl. Area Branch)', 'SHINE HYUNDAI (Silver City Mall)', 'PAWAN HYUNDAI (Lal Kuan)','DREAM HYUNDAI (Meerut Road)']
+          },
+  
+          MODINAGAR: {
+              text: ['FORTUNE HYUNDAI'],
+              value: ['FORTUNE HYUNDAI']
+          },
+          FARIDABAD: {
+              text: ['TRIUMPH HYUNDAI (Near YMCA Chowk)', 'MAHADEV HYUNDAI (NHPC Chowk)', 'MAHADEV HYUNDAI (Byepass Road)', 'BOHRA HYUNDAI (Neelam Bata Road)'],
+              value: ['TRIUMPH HYUNDAI (Near YMCA Chowk)', 'MAHADEV HYUNDAI (NHPC Chowk)', 'MAHADEV HYUNDAI (Byepass Road)', 'BOHRA HYUNDAI (Neelam Bata Road)']
+          },
+  
+          PALWAL: {
+              text: ['PARASHAR HYUNDAI'],
+              value: ['PARASHAR HYUNDAI']
+          },
+          GURUGRAM: {
+              text: ['TRIUMPH HYUNDAI (Wazirpur)', 'TRIUMPH HYUNDAI (Manesar)', 'DEE EMM HYUNDAI (Sohna Road)', 'HIMGIRI HYUNDAI (Golf Course Road, Sector-53)','DEE EMM HYUNDAI (Indl. Estate Opp. Sector-14)','JMV HYUNDAI (Sohna Road)','SAFDARJANG HYUNDAI (Udyog Vihar-IV)','SUPERON HYUNDAI (Sohna Road Branch)','SUPERON HYUNDAI (Hero Honda Chowk)'],
+              value: ['TRIUMPH HYUNDAI (Wazirpur)', 'TRIUMPH HYUNDAI (Manesar)', 'DEE EMM HYUNDAI (Sohna Road)', 'HIMGIRI HYUNDAI (Golf Course Road, Sector-53)','DEE EMM HYUNDAI (Indl. Estate Opp. Sector-14)','JMV HYUNDAI (Sohna Road)','SAFDARJANG HYUNDAI (Udyog Vihar-IV)','SUPERON HYUNDAI (Sohna Road Branch)','SUPERON HYUNDAI (Hero Honda Chowk)']
+          },
+          SONIPAT: {
+              text: ['MALWA HYUNDAI (Jat Joshi Bahalgarh Road)'],
+              value: ['MALWA HYUNDAI (Jat Joshi Bahalgarh Road)']
+          },
+          GANAUR: {
+              text: ['MALWA HYUNDAI (Railway Road)'],
+              value: ['MALWA HYUNDAI (Railway Road)']
+          },
+          KUNDLI: {
+              text: ['MALWA HYUNDAI (NH-1,31KM Stone)'],
+              value: ['MALWA HYUNDAI (NH-1,31KM Stone)']
+          },
+  
+          GOHANA: {
+              text: ['MALWA HYUNDAI (Fowahara Chowk)'],
+              value: ['MALWA HYUNDAI (Fowahara Chowk)']
+          },
+  
+          BARAUT: {
+              text: ['M.R. HYUNDAI (Near Kamta Prasad B.Ed. College)'],
+              value: ['M.R. HYUNDAI (Near Kamta Prasad B.Ed. College)']
+          },
+          BULANDSHAHR: {
+              text: ['FORTUNE HYUNDAI (Bhoor Crossing Delhi Road)'],
+              value: ['FORTUNE HYUNDAI (Bhoor Crossing Delhi Road)']
+          },
+      }
+      
+      }    
+  
+  
+  // removes all option elements in select box 
+  // removeGrp (optional) boolean to remove optgroups
+  function removeAllOptions(sel, removeGrp) {
+      var len, groups, par;
+      if (removeGrp) {
+          groups = sel.getElementsByTagName('optgroup');
+          len = groups.length;
+          for (var i=len; i; i--) {
+              sel.removeChild( groups[i-1] );
+          }
+      }
+      
+      len = sel.options.length;
+      for (var i=len; i; i--) {
+          par = sel.options[i-1].parentNode;
+          par.removeChild( sel.options[i-1] );
+      }
+  }
+  
+  function appendDataToSelect(sel, obj) {
+      var f = document.createDocumentFragment();
+      var labels = [], group, opts;
+      
+      function addOptions(obj) {
+          var f = document.createDocumentFragment();
+          var o;
+          
+          for (var i=0, len=obj.text.length; i<len; i++) {
+              o = document.createElement('option');
+              o.appendChild( document.createTextNode( obj.text[i] ) );
+              
+              if ( obj.value ) {
+                  o.value = obj.value[i];
+              }
+              
+              f.appendChild(o);
+          }
+          return f;
+      }
+      
+      if ( obj.text ) {
+          opts = addOptions(obj);
+          f.appendChild(opts);
+      } else {
+          for ( var prop in obj ) {
+              if ( obj.hasOwnProperty(prop) ) {
+                  labels.push(prop);
+              }
+          }
+          
+          for (var i=0, len=labels.length; i<len; i++) {
+              group = document.createElement('optgroup');
+              group.label = labels[i];
+              f.appendChild(group);
+              opts = addOptions(obj[ labels[i] ] );
+              group.appendChild(opts);
+          }
+      }
+      sel.appendChild(f);
+  }
+  
+  
+  // anonymous function assigned to onchange event of controlling select box
+  document.forms['dataform'].elements['City'].onchange = function(e) {
+      // name of associated select box
+      var relName = 'Dealer';
+      
+      // reference to associated select box 
+      var relList = this.form.elements[ relName ];
+      
+      // get data from object literal based on selection in controlling select box (this.value)
+      var obj = Select_List_Data[ relName ][ this.value ];
+      
+      // remove current option elements
+      removeAllOptions(relList, true);
+      
+      // call function to add optgroup/option elements
+      // pass reference to associated select box and data for new options
+      appendDataToSelect(relList, obj);
+  };
+  
+  
+  // populate associated select box as page loads
+  (function() { // immediate function to avoid globals
+      
+      var form = document.forms['dataform'];
+      
+      // reference to controlling select box
+      var sel = form.elements['City'];
+      sel.selectedIndex = 0;
+      
+      // name of associated select box
+      var relName = 'Dealer';
+      // reference to associated select box
+      var rel = form.elements[ relName ];
+      
+      // get data for associated select box passing its name
+      // and value of selected in controlling select box
+      var data = Select_List_Data[ relName ][ sel.value ];
+      
+      // add options to associated select box
+      appendDataToSelect(rel, data);
+      
+  }());
+  </script>  
+  <script>
+    
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "design") {
+          
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 </script>
+
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/bootstrap/js/bootstrap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -641,7 +422,7 @@ function myFunction(imgs) {
             <script src="assets/js/Simple-Slider.js"></script>
             <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
             <script src="assets/js/data.js"></script>
-            <script src="assets/js/hide.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
            
 </body>
 
