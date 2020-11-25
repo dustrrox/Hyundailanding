@@ -47,10 +47,12 @@
         </div>
     </nav>
     <div class="container" style="margin-top: 48px;">
-      <img class="img-fluid" id="home" src="assets/img/Hyundai-smart-car-550.jpg"
-       style="width:auto;"
-       srcset="assets/img/Hyundai-smart-car-550.jpg 550w" >
-     
+
+      <picture>
+            <source media="(min-width:650px)" srcset="assets\img\Hyundai-smart-car-2100.jpg" style="margin-left:-100px; ">
+            <source media="(min-width:250px)" srcset="assets\img\Hyundai-smart-car-550.jpg" style="padding: 50px;width: auto;" >
+            <img class="img-fluid" src="img_orange_flowers.jpg" alt="Flowers" style="widows: 2px;;">
+          </picture>
    
     </div>
     <div class="container" id="form" style="margin-top: 40px;">
@@ -620,7 +622,7 @@ function myFunction(imgs) {
 </script>
     
 </section>
-<div class="text-nowrap text-center footer-dark" >
+<div class="text-nowrap text-center footer-dark " >
     <footer>
         <div class="container">
             <p class="copyright" style="color: rgb(255,255,255);"><br />Copyright 2020<strong> Hyundaiindiadealers</strong>. All Rights Reserved.<br />Manage By<strong>@ FocusMCS</strong></p>
