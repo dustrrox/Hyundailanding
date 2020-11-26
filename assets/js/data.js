@@ -11,6 +11,7 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
 var LeadData = firebase.database().ref("Data");
 

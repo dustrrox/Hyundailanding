@@ -71,7 +71,7 @@
             <div class="form-group">
               <small class="form-text text-left text-muted" style="margin-left: 5px;font-family: Conv_HyundaiSansHead-Bold;opacity: 1;">Email</small>
               <input class="border rounded-0 form-control" type="text" required="" id="Email" name="Email" inputmode="email" minlength="6"
-                    maxlength="30" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|in|org|net|gov|info)\b" ></div>
+                    maxlength="30" required pattern="[A-Z||a-z0-9!#$%&'*.+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|in|org|net|gov|info)\b" ></div>
             <div class="form-group">
               <small class="form-text text-left text-muted" style="margin-left: 5px;font-family: Conv_HyundaiSansHead-Bold;">Model</small>
               <select class="border rounded-0 form-control" id="Model" name="Model" style="font-family: Conv_HyundaiSansHead-Light;"required>
@@ -423,7 +423,7 @@
             <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
             <script src="assets/js/data.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-           
+            <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
 </body>
 
 </html>
